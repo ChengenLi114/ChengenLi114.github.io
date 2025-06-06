@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+.glow-box {
+  font-family: "PrStart", cursive;
+  font-size: 10px;
+  color: #f0d9ff;
+  border: 2px solid #c77dff;
+  padding: 20px;
+  text-align: center;
+  animation: floatText 4s ease-in-out infinite;
+  box-shadow: 0 0 8px #c77dff, 0 0 16px #9d4edd55, 0 0 32px #7b2cbf33;
+}
+.glow-box .highlight {
+  color: #c77dff;
+  text-shadow: 0 0 4px #e0aaff, 0 0 8px #c77dff;
+}
+@keyframes floatText {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

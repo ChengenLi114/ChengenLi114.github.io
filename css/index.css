@@ -1,0 +1,149 @@
+@font-face {
+    font-family: "EBGaramond-Regular";
+    src: url(../font/EBGaramond-Regular.ttf) format('truetype');
+
+    /* 推荐添加格式声明 */
+    font-weight: normal;
+    /* 明确字重 */
+    font-style: normal;
+    /* 明确字体样式 */
+}
+
+@font-face {
+    font-family: "PrStart";
+    src: url(../font/PrStart.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+html{
+  background-color: black;
+  
+}
+.container {
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-family: "EBGaramond-Regular";
+}
+
+.first,
+.second,
+.three,
+.four {
+    /*height: 120vh;*/
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+h1 {
+  font-size: 24px;
+    text-align: center;
+    color: #6100FF;
+    text-shadow:
+        0 0 10px #9D00FF,
+        /* 基础紫色光晕 */
+        0 0 20px #6100FF,
+        /* 二次加强光晕 */
+        0 0 30px #2400FF;
+    /* 外围扩散光晕 */
+    line-height: 60px;
+}
+
+.content {
+    width: 70%;
+    margin: 150px auto;
+}
+
+.content>p {
+    text-indent: 2rem;
+    line-height: 40px;
+    text-shadow:
+        /* 水平 垂直 模糊 颜色 */
+        0 2px 1px #000,
+        /* 底部深色投影 */
+        2px 4px 4px rgba(0, 0, 0, 0.3),
+        /* 右下方扩散阴影 */
+        -2px -2px 2px rgba(255, 255, 255, 0.3);
+    /* 左上反光 */
+}
+
+hr {
+    margin: 30px;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    /*min-height: 100vh;*/
+}
+
+/* 四个角的三角形（使用伪元素） */
+.box::before,
+.box::after,
+.box .corner-top-left,
+.box .corner-bottom-right {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+/* 右上角（直角三角形） */
+.box::after {
+    top: 0;
+    right: 0;
+    border-width: 0 20vw 20vw 0;
+    /* 高度20vh，宽度20vw */
+    border-color: transparent #6100FF transparent transparent;
+}
+h2{
+    font-size: 36px;
+    color: #6100FF;
+    text-align: center;
+    text-shadow: 
+    -1px -1px 0 white,    /* 左上亮部 */
+    1px 1px 0 rgba(0,0,0,0.3); /* 右下暗部 */
+}
+h3{
+    font-size: 33px;
+    /* text-decoration: underline; */
+    line-height: 40px;
+    color: #6100FF;
+    text-align: center;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: white;
+    margin-top: 100px;   
+}
+.card{
+    border-radius: 20px;
+    padding: 20px;
+    flex: 1;
+    background-color:rgb(97, 0, 255,.5);
+}
+h4{
+    color: #9D00FF;
+    background-color: white;
+    line-height: 40px;
+    font-size: 33px;
+    text-align: center;
+    padding: 20px 0;
+}
+.bottom{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+
+}
+.bottom >div{
+    color: #9D00FF;
+    font-weight: 900;
+    font-size: 30px;
+}

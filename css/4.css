@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+.color-box {
+  flex: 1 1 0;max-width: 250px;
+  padding: 30px 20px;
+  border: 4px solid;
+  border-radius: 16px;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  transition: box-shadow 0.4s ease, border-color 0.4s ease;
+  box-shadow: 0 0 8px 1px transparent;
+  }
+  .color-box strong {
+  display: block;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 900;
+  text-shadow:
+  0 0 1px rgba(255,255,255,0.2),
+  0 0 2px currentColor;
+  }
+  .hell {
+  border-color: #aa336a;
+  background-color: rgba(170, 51, 106, 0.15);
+  color: #ff66cc;
+  }
+  .hell strong {
+  background: linear-gradient(45deg, #ff66cc, #ff99cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  .purgatory {
+  border-color: #cc66ff;
+  background-color: rgba(204, 102, 255, 0.12);
+  color: #cc99ff;
+  }
+  .purgatory strong {
+  background: linear-gradient(45deg, #cc99ff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }.heaven {
+  border-color: #99ccff;
+  background-color: rgba(153, 204, 255, 0.12);
+  color: #99ccff;
+  }
+  .heaven strong {
+  background: linear-gradient(45deg, #99ccff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  .color-box.glow {
+  box-shadow:
+  0 0 15px 6px,
+  0 0 30px 12px;
+  animation: glowAnim 1.5s infinite alternate;
+  }
+  .hell.glow {
+  animation-name: glowHell;
+  }
+  .purgatory.glow {
+  animation-name: glowPurgatory;
+  }
+  .heaven.glow {
+  animation-name: glowHeaven;
+  }
+  @keyframes glowHell {
+  from { box-shadow-color: #ff66cc; }
+  to { box-shadow-color: #ff99cc; }
+  }
+  @keyframes glowPurgatory {
+  from { box-shadow-color: #cc99ff; }
+  to { box-shadow-color: #ffffff; }
+  }
+  @keyframes glowHeaven {
+  from { box-shadow-color: #99ccff; }
+  to { box-shadow-color: #ffffff; }
+  }

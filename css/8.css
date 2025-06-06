@@ -1,0 +1,51 @@
+.memory-passage {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.9em;
+  line-height: 2.2;
+  text-align: center;
+  color: #d0cfff;
+  padding: 40px;
+  position: relative;
+  text-shadow:
+  1px 1px 0 #5a4db7,
+  2px 2px 0 #372b6d;
+  animation: slightShake 3s infinite ease-in-out;
+  }@keyframes slightShake {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(2px, -1px); }
+  20% { transform: translate(-2px, 1px); }
+  30% { transform: translate(2px, 1px); }
+  40% { transform: translate(-1px, -2px); }
+  50% { transform: translate(1px, 2px); }
+  60% { transform: translate(-2px, 1px); }
+  70% { transform: translate(2px, -1px); }
+  80% { transform: translate(-1px, 2px); }
+  90% { transform: translate(1px, -2px); }
+  }
+  .faded {
+  color: #7777aa;
+  font-style: italic;
+  filter: blur(0.5px);
+  }
+  .agent {
+  color: #c9a0ff;
+  }
+  .forest {
+  color: #a08cff;
+  letter-spacing: 0.05em;
+  }
+  .premiums {
+  color: #80dfff;
+  }
+  .allegory {
+  font-weight: bold;
+  color: #bfa3ff;
+  }
+  .highlight {
+  color: #aa88ff;
+  font-style: italic;
+  }
+  .glow {
+  color: #bb99ff;text-shadow: 0 0 8px #8d65ff, 0 0 15px #a274ff;
+  font-weight: bold;
+  }

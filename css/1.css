@@ -1,0 +1,56 @@
+/* html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+} */
+#splash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  cursor: pointer;
+  transition: opacity 1s ease;
+}
+#splash h1 {
+  font-family: "PrStart", cursive;
+  /* font-size: 24px; */
+  text-align: center;
+  line-height: 2;
+  color: #ffffff;
+  background: linear-gradient(90deg, #ffffff, #d0aaff, #c77dff, #9d4edd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300% auto;
+  animation: glow 2.5s ease-in-out infinite, shine 10s linear infinite;
+  text-shadow: 0 0 1px #fff, 0 0 2px #c77dff, 0 0 4px #9d4edd, 0 0 8px #7b2cbf;
+  padding: 30px;
+}
+@keyframes glow {
+  0%,
+  100% {
+    text-shadow: 0 0 1px #fff, 0 0 2px #c77dff, 0 0 4px #9d4edd, 0 0 8px #7b2cbf;
+  }
+  50% {
+    text-shadow: 0 0 2px #fff, 0 0 4px #e0aaff, 0 0 6px #c77dff,
+      0 0 12px #9d4edd;
+  }
+}
+@keyframes shine {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 300% center;
+  }
+}

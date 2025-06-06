@@ -1,0 +1,27 @@
+.cyber-text {
+  font-size: 1.2em;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  white-space: pre-line;
+  }
+  .fragment {
+  color: #888;
+  filter: blur(1px);
+  letter-spacing: 0.2em;
+  font-style: italic;
+  }
+  .glow {
+  color: #00ffe0;
+  font-weight: bold;
+  text-shadow: 0 0 4px #00ffe0;
+  }
+  .soft {
+  color: #aaa;
+  font-size: 0.9em;
+  margin-left: 20px;
+  }
+  .space {
+  display: inline-block;
+  width: 1.5em;
+  }

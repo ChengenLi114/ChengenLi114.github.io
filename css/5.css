@@ -1,0 +1,39 @@
+.five{
+  display: none;
+  position: absolute;
+  top: -20%;
+  left: 30%;
+  transform: translate(10%, -50%);
+
+}
+.wheel {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: spin 40s linear infinite;
+  }
+  .wheel:nth-child(2) {
+  width: 300px;
+  height: 300px;
+  animation-duration: 60s;}
+  .wheel:nth-child(3) {
+  width: 400px;
+  height: 400px;
+  animation-duration: 80s;
+  }
+  .char {
+  position: absolute;
+  color: #cc99ff;
+  font-size: 14px;
+  transform: translate(-50%, -50%);
+  text-shadow:
+  0 0 1px #cc99ff,
+  0 0 3px #9900ff,
+  0 0 6px rgba(153, 0, 255, 0.3);
+  }
+  @keyframes spin {
+  100% {
+  transform: rotate(360deg);
+  }
+  }
